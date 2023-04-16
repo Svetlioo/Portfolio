@@ -94,6 +94,14 @@ input[type="number"] {
   background-color: indianred;
   border-radius: 5px;
 }
-body {
+/* body {
   background-image: url(car-background.jpeg);
+} */
+
+html { 
+  background: url(car-background.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
