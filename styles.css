@@ -1,107 +1,202 @@
-.track {
-  width: 800px;
-  height: 100px;
-  background-color: #999;
-  position: relative;
-  margin: 50px auto;
-  /* overflow-x: hidden; */
-  background-image: url(race-track.jpg);
-  background-size: 800px;
-  height: 200px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.car {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: -50px;
-  animation-timing-function:ease-in;
-  animation-fill-mode: forwards;
-}
-
-.car1 {
-  display: block;
-  top: -20px;
-  /* animation-name: race1; */
-}
-
-.car2 {
-  display: block;
-  top: 80px;
-  /* animation-name: race2; */
-}
-
-@keyframes race1 {
-  0% {
-    left: -50px;
-  }
-  100% {
-    left: 85%;
-  }
-}
-
-@keyframes race2 {
-  0% {
-    left: -50px;
-  }
-  100% {
-    left: 85%;
-  }
-}
-
-.input-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-transform: capitalize;
-  font-weight: bold;
+body {
+  background: #081b29;
   color: whitesmoke;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.navbar a {
   font-size: 18px;
-}
-
-input[type="number"] {
-  width: auto;
-  border-radius: 7px;
-  border-color: gray;
-  align-items: center;
-  padding: 5px;
-}
-
-#result {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 32px;
   color: whitesmoke;
-  font-weight: bolder;
-  text-decoration: solid;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 24px;
+}
+.navbar a:last-child {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  padding: 5px;
+  color: #081b29;
+  background: transparent;
+  z-index: 1;
+  transition: 0.4s;
 }
 
-#submit-button {
+.navbar a:last-child::before {
+  content: "";
+  position: absolute;
+  background: #00abf0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.navbar a:last-child:hover::before {
+  width: 0;
+}
+
+.navbar a:hover,
+.navbar a.current {
+  color: #00abf0;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.home-text h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00abf0;
+}
+
+.home-text p {
   font-size: 16px;
-  padding: 5px;
-  color: white;
-  background-color: gray;
-  border-radius: 5px;
+  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
-#reset-button {
-  font-size: 15px;
-  padding: 5px;
-  color: white;
-  background-color: indianred;
-  border-radius: 5px;
+.btns {
+  width: 340px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-/* body {
-  background-image: url(car-background.jpeg);
-} */
 
-html { 
-  background: url(car-background.jpeg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.btns a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  border: 2px solid #00abf0;
+  background: #00abf0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #081b29;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btns a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btns a:nth-child(2):hover {
+  color: #081b29;
+}
+.btns a:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.btns a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.btns a:hover {
+  color: #00abf0;
+}
+
+.btns a:hover::before {
+  width: 100%;
+}
+
+.socials {
+  position: absolute;
+  bottom: 80px;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.socials a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.socials a:hover::before {
+  width: 100%;
+}
+
+.socials a:hover {
+  color: #081b29;
 }
