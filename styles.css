@@ -14,6 +14,10 @@
   --maincolor: #ff6600;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
 
 body {
   color: var(--textcolor);
@@ -25,7 +29,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 2rem 9%;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +37,7 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 2.4rem;
   text-decoration: none;
   color: var(--textcolor);
   font-weight: 700;
@@ -42,18 +46,18 @@ body {
 /* */
 
 .navbar a {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--textcolor);
   text-decoration: none;
   font-weight: 500;
-  margin-left: 24px;
+  margin-left: 3rem;
 }
 .navbar a:last-child {
   display: inline-flexc;
   position: relative;
-  border: 2px solid var(--maincolor);
-  border-radius: 8px;
-  padding: 5px;
+  border: 0.2rem solid var(--maincolor);
+  border-radius: 0.8rem;
+  padding: 0.5rem;
   color: var(--background);
   background: transparent;
   z-index: 1;
@@ -82,52 +86,53 @@ body {
   color: var(--maincolor);
 }
 
-
 .dark-mode {
   background-color: transparent;
   color: var(--maincolor);
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 3px;
+  padding: 0.3rem;
   position: absolute;
-  right: 75px;
-  top: 18px;
+  right: 7.5rem;
+  top: 1.8rem;
 }
-
 
 .home {
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 10%;
+  background: url(background-landing-page.jpeg), no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .home-text {
-  max-width: 600px;
+  max-width: 60rem;
 }
 
 .home-text h1 {
-  font-size: 52px;
+  font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.2;
 }
 .home-text h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--maincolor);
 }
 
 .home-text p {
-  font-size: 16px;
-  margin: 20px 0;
-  margin-bottom: 30px;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
 .btns {
-  width: 340px;
-  height: 50px;
+  width: 34rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -137,13 +142,13 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 15rem;
   height: 100%;
-  border: 2px solid var(--maincolor);
+  border: 0.2rem solid var(--maincolor);
   background: var(--maincolor);
-  border-radius: 8px;
+  border-radius: 0.8rem;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.8px;
   color: var(--background);
@@ -186,8 +191,8 @@ body {
 
 .socials {
   position: absolute;
-  bottom: 80px;
-  width: 120px;
+  bottom: 8rem;
+  width: 12rem;
   display: flex;
   justify-content: space-between;
 }
@@ -200,7 +205,7 @@ body {
   width: 45px;
   height: 45px;
   background: transparent;
-  border: 2px solid var(--maincolor);
+  border: 0.2rem solid var(--maincolor);
   border-radius: 50%;
   font-size: 28px;
   color: var(--maincolor);
@@ -228,3 +233,26 @@ body {
 .socials a:hover {
   color: var(--background);
 }
+
+#menu-icon {
+  font-size: 3.6rem;
+  cursor: pointer;
+  color: var(--textcolor);
+  display: none;
+}
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: var(--background);
+}
+
+.img-hover:hover {
+  background: transparent;
+  transition: 3s;
+}
+
