@@ -11,7 +11,5 @@ btn.addEventListener("click", function () {
     root.style.setProperty("--background", "#1f1f1f");
     root.style.setProperty("--maincolor", "#ff6600");
   }
-
   darkMode = !darkMode;
-  console.log("ui");
 });
