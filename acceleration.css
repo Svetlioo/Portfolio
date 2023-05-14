@@ -98,6 +98,7 @@ input[type="number"] {
   background-image: url(car-background.jpeg);
 } */
 
+/* whole screen image*/
 html {
   background: url(car-background.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
