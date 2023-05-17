@@ -52,6 +52,8 @@ body {
   font-weight: 500;
   margin-left: 3rem;
 }
+
+/* FIX OVERFLOW!!!*/
 .navbar a:last-child {
   display: inline-flexc;
   position: relative;
