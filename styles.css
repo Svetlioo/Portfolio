@@ -242,7 +242,7 @@ body {
   color: var(--textcolor);
   display: none;
 }
-
+/*  Image opacity effect */
 .img-hover {
   position: absolute;
   top: 0;
