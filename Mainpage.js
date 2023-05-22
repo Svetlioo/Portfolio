@@ -1,3 +1,4 @@
+// try strict mode
 // Dark mode button toggle
 const btn = document.querySelector(".dark-mode");
 const root = document.documentElement;
