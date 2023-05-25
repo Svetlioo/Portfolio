@@ -18,7 +18,7 @@ const resetAnimation = function () {
   car1.style.animationName = "";
   car2.style.animationName = "";
 };
-// FIX THIS !!!
+// FIX THIS !!!!
 const cancelSubmitButton = submitButton.addEventListener(
   "click",
   function (event) {
