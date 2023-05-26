@@ -1,6 +1,10 @@
 /*  !!! FIX SCROLLING  */
 
-
+/*  fix : 
+.example::-webkit-scrollbar {
+  display: none;
+}
+*/
 .track {
   width: 800px;
   height: 100px;
