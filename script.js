@@ -12,7 +12,7 @@ btn.addEventListener("click", function () {
     root.style.setProperty("--textcolor", "#ffffff");
     root.style.setProperty("--background", "#1f1f1f");
     root.style.setProperty("--maincolor", "#ff6600");
-    home.style.setProperty("background", "url(background-landing-page.jpeg)");
+    home.style.setProperty("background", "url(images/background-landing-page.jpeg)");
     home.style.setProperty("background-size", "cover");
     home.style.setProperty("background-position", "center");
   }
