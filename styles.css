@@ -52,6 +52,8 @@ body {
   font-weight: 500;
   margin-left: 3rem;
 }
+
+/* FIX OVERFLOW before animation!!!*/
 .navbar a:last-child {
   display: inline-flexc;
   position: relative;
@@ -240,7 +242,7 @@ body {
   color: var(--textcolor);
   display: none;
 }
-
+/*  Image opacity effect */
 .img-hover {
   position: absolute;
   top: 0;
