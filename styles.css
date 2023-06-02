@@ -104,7 +104,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 0 10%;
-  background: url(background-landing-page.jpeg), no-repeat;
+  background: url(images/background-landing-page.jpeg), no-repeat;
   background-size: cover;
   background-position: center;
 }
