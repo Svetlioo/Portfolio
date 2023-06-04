@@ -52,7 +52,7 @@ body {
   margin-left: 3rem;
 }
 
-/* FIX OVERFLOW before animation!!!*/
+
 .navbar a:last-child {
   display: inline-flex;
   position: relative;
